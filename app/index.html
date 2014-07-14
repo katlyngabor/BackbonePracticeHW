@@ -26,6 +26,15 @@
     <div class="container"> I have a backbone!
     </div>
 
+
+   
+
+ <script type="text/template" id="girls_list">
+    <% girls.each( function(person) { %>
+        <li>Hi, my name is <%= person.get('name') %></li>
+    <% }); %>
+</script>
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -35,7 +44,11 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
+
+        <script src="scripts/backbonepractice.js"></script>
+        <script src="scripts/view.js"></script>
         <script src="scripts/main.js"></script>
+        
         <!-- endbuild -->
 </body>
 </html>
